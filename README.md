@@ -1,4 +1,7 @@
-Christina Clement
+Christina Clement 
+
+Director Full cycle projects 
+
 Full-Cycle Developer and Engineering Leader with a creative mind (The high value). Specializing in architecture, continuous integration, and production operations. Building robust software and leading teams that own the entire product lifecycle from design to deployment.
 
 Leadership Focused 
