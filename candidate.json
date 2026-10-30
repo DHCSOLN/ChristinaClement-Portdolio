@@ -1,0 +1,93 @@
+{
+  "name": "Christina Loren Clement",
+  "candidate_level": [
+    "Executive",
+    "Senior Management",
+    "Director",
+    "Management",
+    "Professional"
+  ],
+  "target_positions": [
+    "Chief Executive Officer",
+    "Chief Operating Officer",
+    "Chief Strategy Officer",
+    "Chief Administrative Officer",
+    "Chief Development Officer",
+    "Executive Director",
+    "Managing Director",
+    "Director of Operations",
+    "Director of Strategic Partnerships",
+    "Director of Business Development",
+    "Director of Philanthropic Engagement",
+    "Director of Community Engagement",
+    "Director of Institutional Development",
+    "Vice President of Operations",
+    "Vice President of Business Development",
+    "Vice President of Strategic Partnerships",
+    "Senior Program Director",
+    "Business Office Manager",
+    "Operations Manager",
+    "Sales Manager",
+    "Senior Executive Advisor"
+  ],
+  "verified_skills": [
+    "Sales",
+    "Customer Service",
+    "Business Operations",
+    "Client Relations",
+    "Executive Leadership",
+    "Strategic Planning",
+    "Organizational Development",
+    "Business Development",
+    "Institutional Development",
+    "Stakeholder Engagement",
+    "Community Engagement",
+    "Strategic Partnerships",
+    "Public Relations",
+    "Government Relations",
+    "Policy Research",
+    "Program Development",
+    "Project Management",
+    "Nonprofit Administration",
+    "Financial Operations",
+    "Budget Planning",
+    "Revenue Development",
+    "Fundraising Strategy",
+    "Executive Communications",
+    "Public Speaking",
+    "Research and Analysis",
+    "Corporate Governance",
+    "Cross-Functional Leadership",
+    "Operational Planning",
+    "Process Improvement",
+    "Client Relationship Management"
+  ],
+  "job_requirements": [
+    "Executive Leadership",
+    "Strategic Planning",
+    "Business Operations",
+    "Business Development",
+    "Stakeholder Engagement",
+    "Client Relations"
+  ],
+  "application_preferences": {
+    "employment_type": [
+      "Full-Time",
+      "Contract",
+      "Executive Consulting"
+    ],
+    "work_arrangement": [
+      "Remote",
+      "Hybrid",
+      "On-Site"
+    ],
+    "leadership_opportunities": true
+  },
+  "screening_configuration": {
+    "qualification_threshold": 80,
+    "review_threshold": 60,
+    "qualified_status": "GREEN_LIGHT_APPLICATION",
+    "review_status": "REVIEW_RECOMMENDED",
+    "manual_review_required": true
+  }
+}
