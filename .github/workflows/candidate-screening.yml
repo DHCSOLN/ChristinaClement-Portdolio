@@ -1,0 +1,33 @@
+name: Candidate Qualification Green Light
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "candidate.json"
+      - "scripts/screen_candidate.py"
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-screening:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Evaluate Candidate
+        run: python scripts/screen_candidate.py
+
+      - name: Upload Screening Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidate-screening-report
+          path: screening-report.json
