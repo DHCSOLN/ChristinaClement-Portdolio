@@ -1,0 +1,35 @@
+name: Daily Executive Candidate Distribution
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+      timezone: "America/New_York"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Candidate Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify Candidate Profile
+        run: |
+          python -m json.tool candidate.json > /dev/null
+          echo "Candidate profile validated."
+
+      - name: Distribute to Authorized Platforms
+        env:
+          DISTRIBUTION_ENDPOINTS: ${{ secrets.DISTRIBUTION_ENDPOINTS }}
+          DISTRIBUTION_TOKEN: ${{ secrets.DISTRIBUTION_TOKEN }}
+        run: python scripts/distribute_candidate.py
