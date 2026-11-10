@@ -1,18 +1,4 @@
-name: Daily Executive Candidate Distribution
 
-on:
-  schedule:
-  - cron: "0 13 * * *"
-   timezone: "America/New_York"
-
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
-jobs:
-  distribute:
-    r
 name: Daily Executive Candidate Distribution
 
 on:
@@ -46,5 +32,3 @@ jobs:
           DISTRIBUTION_ENDPOINTS: ${{ secrets.DISTRIBUTION_ENDPOINTS }}
           DISTRIBUTION_TOKEN: ${{ secrets.DISTRIBUTION_TOKEN }}
         run: python distribute_candidate.py
-
-        
