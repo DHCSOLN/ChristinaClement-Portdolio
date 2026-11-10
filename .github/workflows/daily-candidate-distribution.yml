@@ -32,3 +32,4 @@ jobs:
           DISTRIBUTION_ENDPOINTS: ${{ secrets.DISTRIBUTION_ENDPOINTS }}
           DISTRIBUTION_TOKEN: ${{ secrets.DISTRIBUTION_TOKEN }}
         run: python distribute_candidate.py
+
